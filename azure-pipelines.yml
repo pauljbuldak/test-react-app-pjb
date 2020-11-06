@@ -14,10 +14,6 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
-- task: Npm@1
-  inputs:
-    command: 'install'
-    workingDir: '/test-react-app-pjb'
 
 - script: |
     npm run build

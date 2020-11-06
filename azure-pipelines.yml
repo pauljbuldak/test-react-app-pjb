@@ -52,5 +52,6 @@ steps:
     azureSubscription: 'Pay-As-You-Go-PJB(75d74318-c23c-40c0-99d8-f24c1407cb2f)'
     appType: 'webApp'
     appName: 'test-react-app-pb'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     deploymentMethod: 'auto'
+
